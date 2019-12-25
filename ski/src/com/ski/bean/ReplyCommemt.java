@@ -2,22 +2,35 @@ package com.ski.bean;
 
 import java.util.Date;
 //回复表			
-public class Replycommemt {
+public class ReplyCommemt {
+	private Integer rep_id; //回复编号
 	private	Integer user_id;//用户编号
 	private	String reply_content;//回复内容
 	private	Date reply_time;//回复时间
 	private	Integer com_id;//评论id
 	
-	public Replycommemt() {
+	public ReplyCommemt() {
 		super();
 	}
 
-	public Replycommemt(Integer user_id, String reply_content, Date reply_time, Integer com_id) {
+	public ReplyCommemt(Integer rep_id,  Integer user_id, String reply_content, Date reply_time, Integer com_id) {
 		super();
+		this.rep_id=rep_id;
 		this.user_id = user_id;
 		this.reply_content = reply_content;
 		this.reply_time = reply_time;
 		this.com_id = com_id;
+	}
+	
+	
+	
+
+	public Integer getRep_id() {
+		return rep_id;
+	}
+
+	public void setRep_id(Integer rep_id) {
+		this.rep_id = rep_id;
 	}
 
 	public Integer getUser_id() {
@@ -54,7 +67,9 @@ public class Replycommemt {
 
 	@Override
 	public String toString() {
-		return "Replycommemt [user_id=" + user_id + ", reply_content=" + reply_content + ", reply_time=" + reply_time
-				+ ", com_id=" + com_id + "]";
+		return "ReplyCommemt [rep_id=" + rep_id + ", user_id=" + user_id + ", reply_content=" + reply_content
+				+ ", reply_time=" + reply_time + ", com_id=" + com_id + "]";
 	}
+
+	
 }

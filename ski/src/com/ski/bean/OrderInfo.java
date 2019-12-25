@@ -9,13 +9,13 @@ public class OrderInfo {
 	private	Date order_data;//订单时间
 	private	Integer rec_id;//收货编号
 	private	Integer user_id;//用户编号	
-	
+	private Integer order_state;//订单状态
 	
 	public OrderInfo() {
 		super();
 	}
 
-	public OrderInfo(Integer order_id, String ski_id, Integer count, Date order_data, Integer rec_id, Integer user_id) {
+	public OrderInfo(Integer order_id, String ski_id, Integer count, Date order_data, Integer rec_id, Integer user_id,Integer order_state) {
 		super();
 		this.order_id = order_id;
 		this.ski_id = ski_id;
@@ -23,6 +23,7 @@ public class OrderInfo {
 		this.order_data = order_data;
 		this.rec_id = rec_id;
 		this.user_id = user_id;
+		this.order_state=order_state;
 	}
 
 	public Integer getOrder_id() {
@@ -72,13 +73,21 @@ public class OrderInfo {
 	public void setUser_id(Integer user_id) {
 		this.user_id = user_id;
 	}
+	
+	
+
+	public Integer getOrder_state() {
+		return order_state;
+	}
+
+	public void setOrder_state(Integer order_state) {
+		this.order_state = order_state;
+	}
 
 	@Override
 	public String toString() {
 		return "OrderInfo [order_id=" + order_id + ", ski_id=" + ski_id + ", count=" + count + ", order_data="
-				+ order_data + ", rec_id=" + rec_id + ", user_id=" + user_id + "]";
+				+ order_data + ", rec_id=" + rec_id + ", user_id=" + user_id + ", order_state=" + order_state + "]";
 	}
-	
-	
 	
 }

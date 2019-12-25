@@ -2,7 +2,7 @@ package com.ski.bean;
 
 import java.util.Date;
 //评论表		
-public class Comment {
+public class Comments {
 	private	Integer com_id;//评论编号
 	private	Integer user_id;//用户编号
 	private	String com_content;//评论内容
@@ -10,13 +10,12 @@ public class Comment {
 	
 	
 	
-	
-	public Comment() {
+	public Comments() {
 		super();
 	}
 
 
-	public Comment(Integer com_id, Integer user_id, String com_content, Date com_time) {
+	public Comments(Integer com_id, Integer user_id, String com_content, Date com_time) {
 		super();
 		this.com_id = com_id;
 		this.user_id = user_id;
