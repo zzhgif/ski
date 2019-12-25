@@ -6,7 +6,6 @@ import java.util.Map;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.ski.bean.Comments;
 import com.ski.bean.ReplyCommemt;
 import com.ski.dao.ReplyCommentDao;
 import com.ski.utils.JDBCDataUtils;
